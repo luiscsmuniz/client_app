@@ -29,5 +29,5 @@ Devise.setup do |config|
 
 
   # ==> OmniAuth
-  config.omniauth :gett, 'ifHIS5EX5t6Kln_e0a78Om75S1HM6tfQaMh-Opw4GWs', 'OXlW6Lv4UBJLdoXbpO03iIGt1hcvXeMdfXcvjsgLPCA', callback: 'http://localhost:3002/users/auth/gett/callback'
+  config.omniauth :gett, 'QEDqjyjtv7KRfbQ1-9rpYyKhrjhZsw3sOfAWZoBrjIo', '-PCHZKnzZNdL1s6tQ6KE4zsxKfxWf8s-r2BI6x2ef2c', callback: 'http://localhost:3002/users/auth/gett/callback'
 end
