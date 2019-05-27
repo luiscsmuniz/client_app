@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # devise & omniauth
 gem 'devise'
 gem "omniauth-oauth2"
+gem 'jwt'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
