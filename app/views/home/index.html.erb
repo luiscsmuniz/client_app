@@ -1,6 +1,6 @@
 
 <div>
-  <h1>Comercial</h1>
+  <h1>Client</h1>
   <h4>Usuário</h4>
   <p> DADOS: </p>
   <code>
@@ -15,8 +15,15 @@
     <li>Data de criação: <%=current_user.created_at%></li>
     <li>UID: <%=current_user.uid%></li>
   </ul>
-  <code>
-    <%=session[:result]%>
-  </code>
+  <div style="width: 600px;">
+    <h3>API</h3>
+    <code>
+      <%=@teste%><br>
+    </code>
+
+    <p>
+      <%= @teste['exp'] ? 'Expira em: ' + (Time.at(@teste['exp'].to_i) - Time.now).round.to_s + ' segundos' : 'Expirado' %> 
+    </p>
+  </div>
 </div>
-<%= link_to "Sair", destroy_user_session_path, :method => :delete %>
+<%= link_to "Sair", destroy_user_session_path %>
