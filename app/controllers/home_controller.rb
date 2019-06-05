@@ -4,8 +4,8 @@ class HomeController < ApplicationController
 
     @teste = JSON.parse(response.body)
 
-    if @teste["errors"]
-      redirect_to destroy_user_session_path
-    end
+      if @teste["errors"]
+        redirect_to "http://localhost:3002/users/auth/gett"
+      end
   end
 end
