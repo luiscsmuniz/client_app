@@ -25,9 +25,9 @@ Devise.setup do |config|
 
   config.reset_password_within = 6.hours
 
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
 
   # ==> OmniAuth
-  config.omniauth :gett, 'QEDqjyjtv7KRfbQ1-9rpYyKhrjhZsw3sOfAWZoBrjIo', '-PCHZKnzZNdL1s6tQ6KE4zsxKfxWf8s-r2BI6x2ef2c', callback: 'http://localhost:3002/users/auth/gett/callback'
+  config.omniauth :gett, 'Iggf48wgCZ1DWx2069zedPdMkoBkUqguRTrCQHL9VWg', 'oSDIbJGP-PwPM8c8UsaB4g6HvEQlyGfLoTPpZmIuE_Q', callback: 'http://localhost:3002/users/auth/gett/callback'
 end
